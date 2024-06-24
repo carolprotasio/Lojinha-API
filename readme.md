@@ -1,6 +1,6 @@
 # Projeto Lojinha-API
 
-O projeto Lojinha-API é uma plataforma desenvolvida para testes automatizados de APIs REST, utilizando Rest Assured e JUnit, focando em práticas de qualidade de software.
+O projeto Lojinha-API é uma plataforma desenvolvida para testes automatizados de APIs REST, utilizando Rest Assured e JUnit, focando em práticas de qualidade de software. Esta API permite a gestão de usuários, produtos e componentes, fornecendo endpoints para adicionar, consultar, atualizar e remover esses itens.
 Testes em API REST são essenciais para garantir que as interfaces de programação estejam funcionando corretamente e retornando os resultados esperados. Utilizando o Rest Assured, é possível realizar requisições HTTP, validar respostas e automatizar testes de integração.
 
 ![Lojinha](https://github.com/carolprotasio/Lojinha-API/blob/master/src/main/resources/Assets/lojinha.png)
