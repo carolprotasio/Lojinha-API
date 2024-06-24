@@ -90,7 +90,7 @@ O projeto Lojinha-API testa as seguintes funcionalidades principais:
   | PUT - Validar alterar informações de um componente de produto | Teste para modificar informações de um componente de produto existente. |
   | DELETE - Validar remover um componente do produto | Teste para deletar um componente de um produto do sistema. |
 
-*Resultado dos Testes realizados:
+* Resultado dos Testes realizados:
 
   ![Resultado dos Testes](https://github.com/carolprotasio/Lojinha-API/blob/master/src/main/resources/Assets/resultado-testes.png)
 
