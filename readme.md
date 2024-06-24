@@ -116,7 +116,7 @@ A documentação da API foi elaborada utilizando o Swagger, uma ferramenta ampla
 
 ```bash
 git clone https://github.com/carolprotasio/Lojinha-API.git
-cd lojinha-api
+
 ```
 
 ### ## Conclusão do Projeto
