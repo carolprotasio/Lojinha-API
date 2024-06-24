@@ -1,10 +1,11 @@
 # Projeto Lojinha-API
 
 O projeto Lojinha-API é uma plataforma desenvolvida para testes automatizados de APIs REST, utilizando Rest Assured e JUnit, focando em práticas de qualidade de software.
-
-## O que é Teste em API REST?
-
 Testes em API REST são essenciais para garantir que as interfaces de programação estejam funcionando corretamente e retornando os resultados esperados. Utilizando o Rest Assured, é possível realizar requisições HTTP, validar respostas e automatizar testes de integração.
+
+![Lojinha](https://github.com/carolprotasio/Lojinha-API/blob/master/src/main/resources/Assets/lojinha.png)
+
+## Tecnologias Utilizadas
 
 ## Tecnologias Utilizadas
 
@@ -15,6 +16,8 @@ Testes em API REST são essenciais para garantir que as interfaces de programaç
 - **Jackson Databind**: Biblioteca para conversão de objetos Java em JSON (e vice-versa).
 - **JUnit Jupiter**: Framework para escrever e executar testes unitários em Java.
 - **Rest Assured**: Framework Java para testes automatizados de APIs REST.
+- **IDE IntelliJ**: Ambiente de desenvolvimento integrado amplamente utilizado para desenvolvimento Java.
+  
 
 ## Funcionalidades Testadas
 
@@ -22,12 +25,12 @@ O projeto Lojinha-API testa as seguintes funcionalidades principais:
 
 * Modulo Usuário - Validar os verbos HTTP do usuário - CRUD
 
-| Funcionalidade | Descrição |
-  | -------------- | --------- |
-| `Usuário ` | `Validar os verbos HTTP do usuário - CRUD`|  
-| POST - Validar obtenção do token  | Teste para obtenção do token com sucesso. | 
-| POST - Validar adicionar novo usuário | Teste para verificar se é possível adicionar um novo usuário com sucesso. |
-| DELETE - Limpar todos os dados do usuário | Teste para limpar todos os dados de usuários existentes no sistema. |
+  | Funcionalidade | Descrição |
+    | -------------- | --------- |
+  | `Usuário ` | `Validar os verbos HTTP do usuário - CRUD`|  
+  | POST - Validar obtenção do token  | Teste para obtenção do token com sucesso. | 
+  | POST - Validar adicionar novo usuário | Teste para verificar se é possível adicionar um novo usuário com sucesso. |
+  | DELETE - Limpar todos os dados do usuário | Teste para limpar todos os dados de usuários existentes no sistema. |
 
 
 * Modulo Usuário  - Validar Testes exploratórios
@@ -88,6 +91,20 @@ O projeto Lojinha-API testa as seguintes funcionalidades principais:
   | GET - Validar buscar UM componente de um produto | Teste para verificar a busca de um componente específico de um produto. |
   | PUT - Validar alterar informações de um componente de produto | Teste para modificar informações de um componente de produto existente. |
   | DELETE - Validar remover um componente do produto | Teste para deletar um componente de um produto do sistema. |
+
+*Resultado dos Testes realizados:
+
+  ![Resultado dos Testes](https://github.com/carolprotasio/Lojinha-API/blob/master/src/main/resources/Assets/resultado-testes.png)
+
+## Documentação API com Swagger
+
+A documentação da API foi elaborada utilizando o Swagger, uma ferramenta amplamente reconhecida para documentação de APIs. O Swagger oferece uma interface interativa que permite visualizar e testar as operações da API diretamente no navegador.
+
+![Documentação Swagger da Lojinha-API](https://github.com/carolprotasio/Lojinha-API/blob/master/src/main/resources/Assets/swagger.png)
+
+
+
+
 
 
 ## Como Executar o Projeto
