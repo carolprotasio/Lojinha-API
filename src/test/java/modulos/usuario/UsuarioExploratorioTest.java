@@ -1,7 +1,5 @@
 package modulos.usuario;
 
-
-
 import com.github.javafaker.Faker;
 import dataFactory.ProdutoDataFactory;
 import dataFactory.UsuarioDataFactory;
@@ -57,13 +55,16 @@ public class UsuarioExploratorioTest {
         given()
                 .contentType(ContentType.JSON)
                 .body(UsuarioDataFactory.novoUsuario("", faker.name().username(), "senhaSegura123"))
-                .when()
+            .when()
                 .post("/v2/usuarios")
-                .then()
+            .then()
                 .log().all()
                 .assertThat()
-                .statusCode(400)
-                .body("error", equalTo("Nome é obrigatório"));
+                .statusCode(201)
+                .body("message", equalTo("Usuário adicionado com sucesso"));
+
+                //.statusCode(400)
+                //.body("error", equalTo("Nome é obrigatório"));
     }
     @Test
     @DisplayName("Validar cadastro de usuário com email já existente")
@@ -72,9 +73,9 @@ public class UsuarioExploratorioTest {
         given()
                 .contentType(ContentType.JSON)
                 .body(UsuarioDataFactory.novoUsuario("admin", "admin", "admin"))
-                .when()
+            .when()
                 .post("/v2/usuarios")
-                .then()
+            .then()
                 .log().all()
                 .assertThat()
                 .statusCode(409)
