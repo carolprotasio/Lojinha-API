@@ -7,8 +7,6 @@ Testes em API REST são essenciais para garantir que as interfaces de programaç
 
 ## Tecnologias Utilizadas
 
-## Tecnologias Utilizadas
-
 - **Java**: Linguagem de programação robusta e amplamente utilizada na indústria de desenvolvimento de software.
 - **Maven**: Ferramenta de automação de compilação e gerenciamento de dependências em projetos Java.
 - **Java Faker**: Biblioteca para geração de dados fictícios de forma simplificada.
