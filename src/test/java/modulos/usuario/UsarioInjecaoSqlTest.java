@@ -31,7 +31,7 @@ public class UsarioInjecaoSqlTest {
         .when()
                 .post("/v2/usuarios")
         .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(201);// - resultado inexperado
                 //.statusCode(anyOf(is(400), is(500)));
@@ -49,7 +49,7 @@ public class UsarioInjecaoSqlTest {
             .when()
                 .post("/v2/usuarios")
             .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(400), is(500)));
     }
@@ -66,7 +66,7 @@ public class UsarioInjecaoSqlTest {
             .when()
                 .post("/v2/usuarios")
             .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(400), is(500)));
     }
@@ -80,7 +80,7 @@ public class UsarioInjecaoSqlTest {
                 .when()
                 .post("/v2/usuarios")
                 .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(400), is(500)));
     }

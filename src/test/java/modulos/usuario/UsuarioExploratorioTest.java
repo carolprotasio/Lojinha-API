@@ -16,6 +16,7 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
+@DisplayName("Validar Testes exploratórios")
 public class UsuarioExploratorioTest {
 
     private String token;
@@ -58,7 +59,6 @@ public class UsuarioExploratorioTest {
             .when()
                 .post("/v2/usuarios")
             .then()
-                .log().all()
                 .assertThat()
                 .statusCode(201)
                 .body("message", equalTo("Usuário adicionado com sucesso"));
@@ -76,7 +76,6 @@ public class UsuarioExploratorioTest {
             .when()
                 .post("/v2/usuarios")
             .then()
-                .log().all()
                 .assertThat()
                 .statusCode(409)
                 .body("error", equalTo("O usuário admin já existe."));

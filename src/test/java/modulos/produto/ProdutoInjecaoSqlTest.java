@@ -51,9 +51,9 @@ public class ProdutoInjecaoSqlTest {
                 .contentType(ContentType.JSON)
                 .header("token", this.token)
                 .body(ProdutoDataFactory.criarProduto("Samsung Tablet", 4000.99, cores, "", componentes))
-                .when()
+            .when()
                 .post("/v2/produtos")
-                .then()
+            .then()
                 .extract()
                 .path("data.produtoId");
     }
@@ -70,7 +70,7 @@ public class ProdutoInjecaoSqlTest {
             .when()
                 .get("/v2/produtos/" + produtoId)
             .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(404), is(500)));
     }
@@ -87,7 +87,7 @@ public class ProdutoInjecaoSqlTest {
             .when()
                 .get("/v2/produtos/" + payload)
             .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(404), is(500)));
     }
@@ -104,7 +104,7 @@ public class ProdutoInjecaoSqlTest {
                 .when()
                 .get("/v2/produtos/" + payload)
                 .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(404), is(500)));
     }
@@ -119,7 +119,7 @@ public class ProdutoInjecaoSqlTest {
                 .when()
                 .get("/v2/outro-endpoint/" + payload)
                 .then()
-                .log().all()
+                //.log().all()
                 .assertThat()
                 .statusCode(anyOf(is(404), is(500)));
     }

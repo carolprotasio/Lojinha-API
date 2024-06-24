@@ -42,7 +42,6 @@ public class ProdutoValorTest {
                 .contentType(ContentType.JSON)
                 .header("token", this.token)
                 .body(ProdutoDataFactory.criarProdutoComumcomValorDiferente(0))
-
             .when()
                 .post("/v2/produtos")
             .then()
@@ -60,8 +59,6 @@ public class ProdutoValorTest {
                 .contentType(ContentType.JSON)
                 .header("token", this.token)
                 .body(ProdutoDataFactory.criarProdutoComumcomValorDiferente(7001.00))
-
-
         .when()
                 .post("/v2/produtos")
         .then()
@@ -84,14 +81,10 @@ public class ProdutoValorTest {
         primeiroComponente.setComponenteQuantidade(1);
         componentes.add(primeiroComponente);
 
-
-
         given()
                 .contentType(ContentType.JSON)
                 .header("token", this.token)
                 .body(ProdutoDataFactory.criarProduto("teste 0.01", 0.01, cores, " ", componentes))
-
-
         .when()
                 .post("/v2/produtos")
         .then()
@@ -116,13 +109,10 @@ public class ProdutoValorTest {
 
         componentes.add(primeiroComponente);
 
-
         given()
                 .contentType(ContentType.JSON)
                 .header("token", this.token)
                 .body(ProdutoDataFactory.criarProduto("teste 0.01", 7000, cores, " ", componentes))
-
-
         .when()
                 .post("/v2/produtos")
         .then()
