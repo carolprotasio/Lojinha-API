@@ -119,7 +119,7 @@ git clone https://github.com/carolprotasio/Lojinha-API.git
 
 ```
 
-### ## Conclusão do Projeto
+### Conclusão do Projeto
 
 Este projeto foi desenvolvido como parte da Mentoria com Julio de Lima, proporcionando uma experiência valiosa no desenvolvimento de testes automatizados utilizando JUnit e Rest Assured. Os testes realizados abrangeram diversas funcionalidades da plataforma Lojinha-API, incluindo validações de usuários, produtos e componentes, bem como a segurança contra vulnerabilidades de injeção de SQL.
 
